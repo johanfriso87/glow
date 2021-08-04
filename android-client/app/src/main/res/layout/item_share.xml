@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill"
+    android:gravity="fill">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_vertical"
+            android:background="@color/white"
+            android:visibility="gone" />
+
+        <!--        <com.potyvideo.library.AndExoPlayerView-->
+        <!--            android:id="@+id/videoView"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            app:andexo_full_screen="true"-->
+        <!--            app:andexo_play_when_ready="true"-->
+        <!--            app:andexo_show_controller="false" />-->
+
+        <ImageView
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_gravity="fill"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_instagram_story_f" />
+    </FrameLayout>
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/iconView"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/app_icon"-->
+<!--            android:layout_width="@dimen/_40sdp"-->
+<!--            android:layout_height="@dimen/_40sdp"-->
+<!--            android:scaleType="centerCrop" />-->
+<!--    </RelativeLayout>-->
+
+
+</FrameLayout>

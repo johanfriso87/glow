@@ -1,0 +1,2 @@
+rootProject.name='Glow'
+include ':app', ':Thumby', ':ExPlayer', ':fab', ':universalvideoview', ':app:libraries:ijkplayer-java', ':app:libraries:mkvideoplayer'

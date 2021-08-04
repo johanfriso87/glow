@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Glow</string>
+
+
+    <string name="noInternet">No internet connection!</string>
+    <string name="Retry">Retry</string>
+    <string name="Cancel">Cancel</string>
+    <string name="drops_txt">Breakouts don\'t stand a chance against this skincare trifecta with up to 4 weeks of use!Breakout Clearing Foaming Wash,Breakout clearing Booster and Clearing Defence SPF 30 helps your skin stay clear!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="temp_txt">Make a review.\ncreate a how-to video, or show us\nyour routine!</string>
+
+    <string name="confirm_email">To confirm your email address, tap the button\nin the email we sent to</string>
+
+
+    <string name="t1">1. Your Review has to be at least 10 seconds long and its up to 60 second long total.</string>
+    <string name="t2">2. Show of the product and how you use it!</string>
+    <string name="t3">3. Add some flavour with filters, stickers and text.</string>
+    <string name="t4">4. Get rewarded when your friends watch you videos.</string>
+    <string name="facebook_app_id">782618982500534</string>
+    <string name="fb_login_protocol_scheme">fb782618982500534</string>
+
+</resources>

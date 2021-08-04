@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="MakeReviewCollectionViewCell" reuseIdentifier="MakeReviewCollectionViewCell" id="Apf-gM-SBP" customClass="MakeReviewCollectionViewCell" customModule="glow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="186" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wPx-dk-Pr2">
+                <rect key="frame" x="0.0" y="0.0" width="186" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eb7-VN-XXG">
+                        <rect key="frame" x="0.0" y="0.0" width="186" height="300"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UdR-kW-ZL2">
+                                <rect key="frame" x="0.0" y="0.0" width="186" height="300"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ti-Pv-xjc">
+                                        <rect key="frame" x="43" y="20" width="100" height="100"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="g9a-uB-qUn">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="g9a-uB-qUn" firstAttribute="leading" secondItem="6Ti-Pv-xjc" secondAttribute="leading" id="7O5-sT-sqb"/>
+                                            <constraint firstItem="g9a-uB-qUn" firstAttribute="top" secondItem="6Ti-Pv-xjc" secondAttribute="top" id="LLl-KF-k6E"/>
+                                            <constraint firstAttribute="width" constant="100" id="Lgg-mz-fVH"/>
+                                            <constraint firstAttribute="trailing" secondItem="g9a-uB-qUn" secondAttribute="trailing" id="p35-C6-xBt"/>
+                                            <constraint firstAttribute="bottom" secondItem="g9a-uB-qUn" secondAttribute="bottom" id="pGo-r5-I3b"/>
+                                            <constraint firstAttribute="height" constant="100" id="qO5-Ge-PD8"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wyS-qO-fua">
+                                        <rect key="frame" x="10" y="130" width="166" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aB-vD-wAx" customClass="RefsLabel" customModule="glow" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="166" height="12.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osM-cM-gTt" customClass="RefsLabel" customModule="glow" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="17.5" width="166" height="12.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dMQ-tj-80B">
+                                        <rect key="frame" x="20" y="190" width="146" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Shg-4P-phh" customClass="RefsButton" customModule="glow" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="146" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="fez-At-7SN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Make Review">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbR-2g-Oga" customClass="RefsButton" customModule="glow" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="35" width="146" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <state key="normal" title="See Reviews">
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qly-LM-Il2">
+                                                <rect key="frame" x="0.0" y="70" width="146" height="30"/>
+                                                <state key="normal" title="save sticker">
+                                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="wyS-qO-fua" firstAttribute="centerX" secondItem="g9a-uB-qUn" secondAttribute="centerX" id="JEC-Xo-ogo"/>
+                                    <constraint firstAttribute="trailing" secondItem="wyS-qO-fua" secondAttribute="trailing" constant="10" id="OGz-5d-Y9R"/>
+                                    <constraint firstAttribute="trailing" secondItem="dMQ-tj-80B" secondAttribute="trailing" constant="20" id="W2V-zM-DHB"/>
+                                    <constraint firstItem="dMQ-tj-80B" firstAttribute="centerX" secondItem="g9a-uB-qUn" secondAttribute="centerX" id="dWf-J4-5DJ"/>
+                                    <constraint firstItem="dMQ-tj-80B" firstAttribute="leading" secondItem="UdR-kW-ZL2" secondAttribute="leading" constant="20" id="dvi-Ad-PA4"/>
+                                    <constraint firstItem="wyS-qO-fua" firstAttribute="top" secondItem="6Ti-Pv-xjc" secondAttribute="bottom" constant="10" id="fiH-a5-boh"/>
+                                    <constraint firstItem="dMQ-tj-80B" firstAttribute="top" secondItem="wyS-qO-fua" secondAttribute="bottom" constant="30" id="hIn-kA-QCn"/>
+                                    <constraint firstItem="6Ti-Pv-xjc" firstAttribute="top" secondItem="UdR-kW-ZL2" secondAttribute="top" constant="20" id="mwg-kI-c1k"/>
+                                    <constraint firstItem="wyS-qO-fua" firstAttribute="leading" secondItem="UdR-kW-ZL2" secondAttribute="leading" constant="10" id="ouP-fE-djW"/>
+                                    <constraint firstItem="6Ti-Pv-xjc" firstAttribute="centerX" secondItem="UdR-kW-ZL2" secondAttribute="centerX" id="rt4-UL-563"/>
+                                    <constraint firstAttribute="bottom" secondItem="dMQ-tj-80B" secondAttribute="bottom" constant="10" id="xHa-rg-7c5"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UdR-kW-ZL2" firstAttribute="top" secondItem="eb7-VN-XXG" secondAttribute="top" id="32w-FT-kRS"/>
+                            <constraint firstAttribute="bottom" secondItem="UdR-kW-ZL2" secondAttribute="bottom" id="Peb-dS-a6U"/>
+                            <constraint firstAttribute="width" constant="186" id="lmk-WL-T5C" customClass="RefsConstraintHeightWidth" customModule="glow" customModuleProvider="target">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="width">
+                                        <real key="value" value="186"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="height">
+                                        <real key="value" value="351"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="UdR-kW-ZL2" firstAttribute="leading" secondItem="eb7-VN-XXG" secondAttribute="leading" id="psd-7L-50H"/>
+                            <constraint firstAttribute="trailing" secondItem="UdR-kW-ZL2" secondAttribute="trailing" id="sE1-Rc-XA0"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eb7-VN-XXG" firstAttribute="top" secondItem="wPx-dk-Pr2" secondAttribute="top" id="DqF-vZ-n4E"/>
+                    <constraint firstAttribute="bottom" secondItem="eb7-VN-XXG" secondAttribute="bottom" id="GNs-Gc-VUI"/>
+                    <constraint firstItem="eb7-VN-XXG" firstAttribute="leading" secondItem="wPx-dk-Pr2" secondAttribute="leading" id="Una-Oc-xYd"/>
+                    <constraint firstAttribute="trailing" secondItem="eb7-VN-XXG" secondAttribute="trailing" id="zro-9g-4Q1"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="197" height="282"/>
+            <connections>
+                <outlet property="descLabel" destination="osM-cM-gTt" id="Bh3-Zx-2C0"/>
+                <outlet property="makeReviewButton" destination="Shg-4P-phh" id="Jlm-rY-Ov7"/>
+                <outlet property="productIMageView" destination="g9a-uB-qUn" id="VC8-pK-CcS"/>
+                <outlet property="reviewButton" destination="cbR-2g-Oga" id="cUq-ha-mcl"/>
+                <outlet property="saveStickerButton" destination="Qly-LM-Il2" id="LtO-Px-vtN"/>
+                <outlet property="titleLabel" destination="8aB-vD-wAx" id="hvc-0H-dCI"/>
+            </connections>
+            <point key="canvasLocation" x="244.20289855072465" y="213.61607142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="1" width="275" height="183"/>
+    </resources>
+</document>

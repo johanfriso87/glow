@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_tutorial"
+    android:orientation="vertical">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp" />
+
+    <com.ogaclejapan.smarttablayout.SmartTabLayout
+        android:id="@+id/viewpagertab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:stl_clickable="true"
+        app:stl_defaultTabBackground="@color/transparent"
+        app:stl_defaultTabTextColor="@color/textTitleColor"
+        app:stl_defaultTabTextSize="13sp"
+        android:padding="3dp"
+        app:stl_defaultTabTextAllCaps="false"
+        app:stl_defaultTabTextHorizontalPadding="10dp"
+        app:stl_dividerColor="#4D000000"
+        android:background="@drawable/bg_grey"
+        app:stl_dividerThickness="1dp"
+        android:clipToPadding="false"
+        app:stl_drawDecorationAfterTab="false"
+        android:layout_gravity="center"
+        app:stl_indicatorAlwaysInCenter="false"
+        app:stl_indicatorColor="@color/white"
+        app:stl_indicatorCornerRadius="7dp"
+        app:stl_indicatorGravity="center"
+        app:stl_indicatorThickness="36dp"
+        app:stl_indicatorInterpolation="smart"
+        app:stl_underlineColor="@color/transparent"
+        app:stl_underlineThickness="0dp" />
+
+    <Button
+        android:id="@+id/lets_go"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:background="@drawable/round_corner_purple_bg_1"
+        android:text="Let's go"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp" />
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="name"
+            android:textColor="#A3A3A3"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/product_dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:maxLines="2"
+            android:text="detailed"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+        <!--        <Button-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="@dimen/_10sdp"-->
+        <!--            android:background="@drawable/round_corner_mat_black_bg"-->
+        <!--            android:textAllCaps="false"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="@dimen/_12sdp" />-->
+
+        <Button
+            android:id="@+id/product_make"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/round_corner_purple_bg_1"
+            android:text="Make Review"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:clickable="true"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/product_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:text="See Reviews"
+            android:textColor="@color/purple"
+            android:textSize="@dimen/_12sdp" />
+
+        <com.glowteam.CustomViews.CustomTextView
+            android:id="@+id/save_sticker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:text="Save sticker"
+            android:textColor="@color/light_pink"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

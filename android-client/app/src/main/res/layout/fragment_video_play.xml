@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoPanelHeight="@dimen/_145sdp"
+    sothree:umanoOverlay="true"
+    sothree:umanoShadowHeight="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context="com.glowteam.Ui.Activity.VideoPlayActivity">
+
+
+        <!--        <VideoView-->
+        <!--            android:id="@+id/videoview"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_gravity="center" />-->
+
+        <com.potyvideo.library.AndExoPlayerView
+            android:id="@+id/andExoPlayerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:andexo_full_screen="true"
+            app:andexo_loop="infinite"
+            app:andexo_play_when_ready="true"
+            app:andexo_show_controller="false" />
+
+<!--        <tcking.github.com.giraffeplayer2.VideoView-->
+<!--            android:id="@+id/video_view"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"/>-->
+
+<!--        <com.xiao.nicevideoplayer.NiceVideoPlayer-->
+<!--            android:id="@+id/player"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"/>-->
+
+<!--        <include-->
+<!--            layout="@layout/mk_player"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" />-->
+
+        <!--    <com.glowteam.CustomViews.CustomViewPager-->
+        <!--        android:id="@+id/viewPager"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent"/>-->
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:tint="@color/white"
+            app:srcCompat="@drawable/iv_back" />
+
+        <LinearLayout
+            android:id="@+id/profileView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/img"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/user"
+                    app:civ_border="false" />
+
+                <ImageView
+                    android:id="@+id/subscribe"
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/add" />
+            </RelativeLayout>
+
+            <com.glowteam.CustomViews.CustomTextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+        <com.daasuu.ahp.AnimateHorizontalProgressBar
+            android:id="@+id/animate_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            app:ahp_backgroundColor="@color/transparent"
+            app:ahp_progressColor="@color/white" />
+
+        <uk.co.markormesher.android_fab.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:buttonBackgroundColour="@color/transparent"
+            app:buttonIcon="@drawable/menu"
+            app:buttonPosition="top|end" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/fragment_video_like" />
+
+    </RelativeLayout>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

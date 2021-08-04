@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="8dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/bg_grey"
+            android:elevation="1dp"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.glowteam.CustomViews.CustomTextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:paddingHorizontal="4dp"
+                android:text="@string/app_name"
+                android:textColor="@color/textTitleColor"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="64dp"
+                    android:layout_height="100dp">
+
+                    <com.whygraphics.gifview.gif.GIFView
+                        android:id="@+id/gif_view1"
+                        android:layout_width="match_parent"
+                        android:foreground="@drawable/reviewvideoshape"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/img_view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_grey1"
+                        android:foreground="@drawable/reviewvideoshape"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/people" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="64dp"
+                    android:layout_height="100dp">
+
+                    <com.whygraphics.gifview.gif.GIFView
+                        android:id="@+id/gif_view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:foreground="@drawable/reviewvideoshape"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/img_view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_grey1"
+                        android:foreground="@drawable/reviewvideoshape"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/people" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="64dp"
+                    android:layout_height="100dp">
+
+                    <com.whygraphics.gifview.gif.GIFView
+                        android:id="@+id/gif_view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:foreground="@drawable/reviewvideoshape"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/img_view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_grey1"
+                        android:foreground="@drawable/reviewvideoshape"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/people" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="vertical"
+
+                android:padding="4dp">
+
+                <Button
+                    android:id="@id/subscribe"
+                    android:layout_width="125dp"
+
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/subscribebutton"
+                    android:gravity="center"
+                    android:text="+ Subscribe"
+                    android:textColor="#fff">
+
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#0064bd00"
+            android:elevation="0dp"
+            android:paddingTop="15dp"
+            app:cardBackgroundColor="@color/transparent"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="0dp">
+
+
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="125dp">-->
+
+            <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+            <!--                    android:id="@+id/profile_image"-->
+            <!--                    android:layout_width="125dp"-->
+            <!--                    android:layout_height="125dp"-->
+            <!--                    -->
+            <!--                    ̰ android:src="@drawable/people"-->
+            <!--                    app:civ_border_color="@color/white"-->
+            <!--                    app:civ_border_width="1dp" />-->
+
+            <!--                                <ImageView-->
+            <!--                                    android:layout_alignParentBottom="true"-->
+            <!--                                    android:src="@drawable/add"-->
+            <!--                                    android:layout_width="35dp"-->
+            <!--                                    android:layout_height="35dp"/>-->
+
+
+            <!--            </RelativeLayout>-->
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/people"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="1dp" />
+
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</FrameLayout>

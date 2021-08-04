@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "SpotlightDetailViewController.playVideoAfterDaraging(newIndexPath:):SpotlightDetailViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.videoList[newIndexPath.item]">
+            </PersistentString>
+            <PersistentString
+               value = "self.videoList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in static SearchRequest.searchProduct(param:callback:):SearchRequest.swift">
+      </ContextState>
+      <ContextState
+         contextName = "SearchResultViewController.collectionView(_:cellForItemAt:):SearchResultViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.searchList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in static SearchRequest.searchProductFromUrl(param:callback:):SearchRequest.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in HomeViewController.getDashBoardData():HomeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.dashData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #2 in VideoSaveViewController.videoUpload():VideoSaveViewController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

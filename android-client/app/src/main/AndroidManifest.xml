@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.glowteam">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.android.providers.media.MediaProvider" />
+
+    <uses-feature android:name="android.hardware.camera" />
+     <uses-feature
+     android:name="android.hardware.camera2"
+     android:required="true" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:name=".Utils.Application"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/iv_appicon"
+        android:label= "@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/iv_appicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon">
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+        <activity   android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity  
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <activity   android:name=".Ui.Activity.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity   android:name=".Ui.Activity.Product_Activity" />
+        <activity   android:name=".Ui.Activity.ShareActivity" />
+        <activity  
+            android:name=".Ui.Activity.VideoEditActivity"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity   android:name=".Ui.Activity.VideoPlayActivity" />
+        <activity  
+            android:name=".Ui.Activity.MainActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity    android:name=".Ui.Activity.SplashActivity" />
+        <activity   android:name=".Ui.Activity.EditProfileActivity" />
+        <activity   android:name=".Ui.Activity.LoginActivity" />
+        <activity   android:name=".Ui.Activity.ProfileActivity" />
+        <activity   android:name=".Ui.Activity.SettingActivity" />
+        <activity  
+            android:name=".Ui.Activity.VideoRecordActivity"
+            android:theme="@style/Fullscreen" />
+        <activity   android:name=".Ui.Activity.VideoRecordActivityNew" />
+        <activity   android:name=".Ui.Activity.DocDetailActivity" />
+        <activity   android:name=".Ui.Activity.UserProfileActivity" />
+        <activity   android:name=".Ui.Activity.WebViewGoogle" />
+        <activity   android:name=".Ui.Activity.LoginActivityNew">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "glow://password” -->
+                <data android:scheme="glow" />
+            </intent-filter>
+        </activity>
+        <activity   android:name=".Ui.Activity.ForgotPasswordActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <provider android:authorities="com.facebook.app.FacebookContentProvider782618982500534"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true" />
+    </application>
+
+</manifest>

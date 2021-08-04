@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#401C4C">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomView"
+        android:layout_weight="1">
+
+        <!--    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator-->
+        <!--        android:id="@+id/dots_indicator"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        app:dotsColor="#ABACA8"-->
+        <!--        app:dotsCornerRadius="8dp"-->
+        <!--        app:dotsSize="16dp"-->
+        <!--        app:dotsSpacing="4dp"-->
+        <!--        android:layout_alignParentBottom="true"-->
+        <!--        android:layout_marginBottom="50dp"-->
+        <!--        android:layout_centerHorizontal="true"-->
+        <!--        app:dotsWidthFactor="2.5"-->
+        <!--        app:selectedDotColor="@color/purple"-->
+        <!--        app:progressMode="true"-->
+        <!--        />-->
+
+        <!--    <androidx.viewpager.widget.ViewPager-->
+        <!--        android:id="@+id/viewPager"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent" />-->
+
+
+        <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.glowteam.CustomViews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="G"
+                android:textColor="@color/purple"
+                android:textSize="@dimen/_90sdp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <com.glowteam.CustomViews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="L"
+                android:textColor="@color/google_red"
+                android:textSize="@dimen/_50sdp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <com.glowteam.CustomViews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O"
+                android:textColor="@color/h1"
+                android:textSize="@dimen/_50sdp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <com.glowteam.CustomViews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="W"
+                android:textColor="@color/e3"
+                android:textSize="@dimen/_50sdp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

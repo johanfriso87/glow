@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="sns_color">#973BF0</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_light">#27000000</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="dd">#32FFFFFF</color>
+
+    <color name="textTitleColor">#2A2C30</color>
+    <color name="textColor">#808286</color>
+    <color name="purple">#9239FD</color>
+    <color name="light_text_color">#C4C4C4</color>
+
+    <color name="BlueViolet">#8A2BE2</color>
+    <color name="tabTextColor">#1C0A25</color>
+    <color name="tabTextUnSelected">#7F8185</color>
+
+    <color name="google_red">#DB4437</color>
+    <color name="light_pink">#FF69B4</color>
+
+    <color name="dark_grey">#949494</color>
+    <color name="light_grey">#EBECF0</color>
+    <color name="light_grey1">#D3D3D3</color>
+
+    <color name="h1">#FFCF34</color>
+    <color name="h2">#934B01</color>
+    <color name="h3">#7B0100</color>
+    <color name="h4">#000000</color>
+    <color name="h6">#B4B4B4</color>
+    <color name="h5">#E65901</color>
+    <color name="h7">#489DD3</color>
+
+    <color name="e1">#0000FF</color>
+    <color name="e2">#934B01</color>
+    <color name="e3">#00BD00</color>
+    <color name="e4">#B4B4B4</color>
+    <color name="e5">#DA9100</color>
+</resources>

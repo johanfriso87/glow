@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/itemView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.glowteam.CustomViews.CustomTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="Featured Article"
+            android:visibility="gone"
+            android:textColor="@color/textTitleColor"
+            android:textSize="20sp" />
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:clipToPadding="true">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/people" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <com.glowteam.CustomViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:text="COMMUNITY TOPIC"
+            android:textColor="@color/textTitleColor"
+            android:textSize="13sp"/>
+
+        <com.glowteam.CustomViews.CustomTextView
+            android:id="@+id/doc_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:textStyle="bold"
+            android:text="How beauty industry can do better,According to 7 Beauty Influencer"
+            android:textColor="@color/textTitleColor"
+            android:textSize="28sp"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

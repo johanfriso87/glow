@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "548649559153",
+    "firebase_url": "https://supergrate.firebaseio.com",
+    "project_id": "supergrate",
+    "storage_bucket": "supergrate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548649559153:android:1d004f3f8d5a87d3f227d0",
+        "android_client_info": {
+          "package_name": "com.glowteam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "548649559153-dlv8h441sg1a6rc7b0bhvm4ticcc5qmf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.glowteam",
+            "certificate_hash": "d0a090c6e30f69e71483448a073b47bb81e7ce13"
+          }
+        },
+        {
+          "client_id": "548649559153-a63d3hj43rkg7hg62r7ogkj0n8cbj79d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.glowteam",
+            "certificate_hash": "711537966dee336e33f6c5d122c41155a43b3177"
+          }
+        },
+        {
+          "client_id": "548649559153-ffn92t4b81p6s00ct678ch828t5dqr6a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc-PYSUmqt7qDI8YmXYbHn1uay0V6cWAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "548649559153-ffn92t4b81p6s00ct678ch828t5dqr6a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "548649559153-rb8hiujegfuq93cpl0io26h6d4436spf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.glowteams"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

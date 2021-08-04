@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="385dp"
+        android:layout_margin="1dp"
+        android:clipToPadding="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--                <com.universalvideoview.UniversalVideoView-->
+                <!--                    android:id="@+id/andExoPlayerView"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="260dp"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    app:uvv_autoRotation="false"-->
+                <!--                    app:uvv_fitXY="true" />-->
+
+                <!--                <tcking.github.com.giraffeplayer2.VideoView-->
+                <!--                    android:id="@+id/andExoPlayerView"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="260dp"/>-->
+
+                <!--                <VideoView-->
+                <!--                    android:id="@+id/andExoPlayerView"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="260dp"-->
+                <!--                    android:layout_gravity="center" />-->
+
+                <com.whygraphics.gifview.gif.GIFView
+                    android:id="@+id/gif_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="280dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/people" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image_user"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/people"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="1dp" />
+
+                    <com.glowteam.CustomViews.CustomTextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="-2"
+                        android:shadowDy="-2"
+                        android:shadowRadius="1"
+                        android:text="Jon snow"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_img_container"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/gif_view"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-35dp"
+                    android:innerRadius="0dp"
+                    android:shape="ring"
+                    app:cardCornerRadius="@dimen/_30sdp">
+
+                    <ImageView
+                        android:id="@+id/profile_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:padding="@dimen/_9sdp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <!--                        <com.mikhaellopez.circularimageview.CircularImageView-->
+                <!--                            android:id="@+id/profile_user"-->
+                <!--                            android:layout_width="70dp"-->
+                <!--                            app:civ_border="false"-->
+                <!--                            android:scaleType="centerInside"-->
+                <!--                            android:layout_height="70dp"/>-->
+
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cv_img_container"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="@string/app_name"
+                    android:textColor="#6E6E6E"
+                    android:textSize="@dimen/_10sdp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
